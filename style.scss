@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #bc5ef1;
+}
+
+.wrapper {
+    width: 420px;
+    background: #fff;
+    border-radius: 7px;
+    padding: 28px 28px 45px;
+
+    header {
+        font-size: 28px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .addTask {
+        margin: 5px 0 18px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        input {
+            height: 53px;
+            // width: 90%;
+            outline: none;
+            font-size: 16px;
+            padding: 0 42px;
+            border-radius: 5px;
+            border: 1px solid #999;
+        }
+
+        input::placeholder {
+            color: #b8b8b8;
+        }
+
+        input:focus {
+            padding: 0 41px;
+            border: 2px solid #bc5ef1;
+        }
+
+        button {
+            border: none;
+            width: 53px;
+            height: 53px;
+            background: #5e96f1;
+            border-radius: 5px;
+
+            i  {
+                color: #302c2c;
+                font-weight: 100;
+                font-size: 45px;
+            }
+
+            :hover {
+                cursor: pointer;
+                color: black;
+                font-size: 50px;
+            }
+        }
+    }
+
+    .todoList {
+        // max-height: 215px;
+        :last-child {
+            border-bottom: none;
+        }
+
+        li {
+            border-left: 3px solid #bc5ef1;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 14px;
+            // padding-bottom: 17px;
+            align-content: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(204, 204, 204, 0.329);
+
+            span {
+                margin-left: 5%;
+            }
+
+            button {
+                width: 40px;
+                height: 40px;
+                border: none;
+                border-radius: 3px;
+                background: #fc3f3f;
+
+                i {
+                    background: #fc3f3f;
+                    font-weight: 500;
+                    font-size: 30px;
+                }
+
+                :hover {
+                    cursor: pointer;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+
+    .footer {
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            font-size: 20px;
+        }
+
+        button {
+            color: white;
+            cursor: pointer;
+            border: none;
+            width: 80px;
+            background: #5e96f1;
+            border-radius: 5px;
+            display: inline;
+        }
+
+        button:hover {
+            background: #215f72;
+        }
+    }
+    
+}
