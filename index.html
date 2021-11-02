@@ -13,20 +13,19 @@
     <div class="wrapper">
         <header>TODO List</header>
         <div class="addTask">
-            <input type="text" placeholder="Add your new task">
-            <button><i class="fas fa-plus-square"></i></button>
+            <input id="inputBox" type="text" placeholder="Add your new task">
+            <button id="addBtn" ><i class="fas fa-plus-square"></i></button>
         </div>
-        <div class="todoList">
-            <ul>
-                <li><span>Do your homework</span> <button><i class="fas fa-trash-alt"></i></button></li>
-                <li><span>Do your homework</span> <button><i class="fas fa-trash-alt"></i></button></li>
-                <li><span>Do your homework</span> <button><i class="fas fa-trash-alt"></i></button></li>
-            </ul>
-        </div>
+        <ul class="todoList">
+            <!-- <li><span>Do your homework</span> <button><i class="fas fa-trash-alt" id="delBtn" onclick="deleteTask()"></i></button></li>
+            <li><span>Do your homework</span> <button><i class="fas fa-trash-alt" id="delBtn" onclick="deleteTask()"></i>></i></button></li>
+            <li><span>Do your homework</span> <button><i class="fas fa-trash-alt" id="delBtn" onclick="deleteTask()"></i>></i></button></li> -->
+        </ul>
         <div class="footer">
-            <span>You have 2 pending tasks</span>
-            <button class="clearAll">Clear All</button>
+            <span>You have <span id="pendingTasks"></span> pending tasks</span>
+            <button class="clearAll" id="clearBtn">Clear All</button>
         </div>
     </div>
 </body>
+    <script src="script.js"></script>
 </html>
